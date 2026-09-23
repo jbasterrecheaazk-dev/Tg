@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio ML - Clasificador de Frutas</title>
+  <link rel="stylesheet" href="frutak.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>Clasificador de Frutas 🍎🍊🍏</h2>
+    <p class="description">Introduce los atributos para que el modelo identifique la fruta.</p>
+
+    <!-- Formulario de Entrada -->
+    <div class="form-group">
+      <label for="input-color">Color:</label>
+      <input type="text" id="input-color" placeholder="Ej: rojo, amarillo...">
+    </div>
+
+    <div class="form-group">
+      <label for="input-forma">Forma:</label>
+      <input type="text" id="input-forma" placeholder="Ej: redonda, alargada...">
+    </div>
+
+    <button id="btn-preddecir">Clasificar Fruta</button>
+
+    <!-- Resultado si acierta -->
+    <div id="seccion-resultado" class="hidden">
+      <div id="resultado" class="resultado-box"></div>
+      <button id="btn-reiniciar" class="btn-secundario">Probar otra vez</button>
+    </div>
+
+    <!-- Campo oculto para el aprendizaje (si no encuentra la fruta) -->
+    <div id="seccion-aprendizaje" class="hidden">
+      <p id="mensaje-error" class="error-text"></p>
+      <div class="form-group">
+        <label for="input-nombre">¿Qué fruta era?:</label>
+        <input type="text" id="input-nombre" placeholder="Ej: manzana, platano...">
+      </div>
+      <button id="btn-guardar">Entrenar Modelo</button>
+    </div>
+  </div>
+
+  <script src="frutak.js"></script>
+</body>
+</html>

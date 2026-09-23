@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #444;
+}
+
+input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+input:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.btn-secundario {
+  background-color: #007bff;
+  margin-top: 1rem;
+}
+
+.btn-secundario:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+#seccion-aprendizaje {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px dashed #ffc107;
+}
+
+.error-text {
+  color: #d9534f;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.resultado-box {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: #d4edda;
+  color: #155724;
+}
