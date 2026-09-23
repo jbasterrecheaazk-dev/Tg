@@ -6,11 +6,19 @@ let datosEntrenamiento = [
   { color: "verde", forma: "alargada", nombre: "Calabacín" }
 ];
 
-//
+const boton = document.querySelector("#btn-preddecir");
+boton.addEventListener("click", function() {
+  let color = document.getElementById("input-color").value;
+  console.log(color);
+  let forma = document.getElementById("input-forma").value;
+  console.log(forma);
+});
 
- // for (let dato of datosEntrenamiento) {
-  //  if (colorBuscado === dato.color && formaBuscada === dato.forma) {
-      
+for (let dato of datosEntrenamiento) {
+  if (color === dato.color && forma === dato.forma) {
+    console.log("La fruta es: " + dato.nombre);
+  }
+}    
 
 
 // 2. ENTRENAR
