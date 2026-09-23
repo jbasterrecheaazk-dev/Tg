@@ -17,6 +17,7 @@ boton.addEventListener("click", function() {
 for (let dato of datosEntrenamiento) {
   if (color === dato.color && forma === dato.forma) {
     console.log("La fruta es: " + dato.nombre);
+    
   }
 }    
 
